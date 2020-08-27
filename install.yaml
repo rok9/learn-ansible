@@ -1,0 +1,14 @@
+---
+  - hosts: server
+    tasks:
+    - name: Installing FTP Service
+      yum:
+        name=vsftpd
+        state=latest
+      
+    - name: Start FTP service
+      service:
+        name=vsftpd
+        state=restarted
+        enabled=yes
+

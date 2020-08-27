@@ -1,0 +1,15 @@
+# [server]
+# control ansible_host=192.168.50.19 ansible_connection=ssh ansible_user=root ansible_ssh_pass=r
+
+# [Clients]
+# node1 ansible_host=192.168.50.16 ansible_connection=ssh ansible_user=root ansible_ssh_pass=r
+
+# node2 ansible_host=192.168.50.16 ansible_connection=ssh ansible_user=root ansible_ssh_pass=r
+
+
+[server]
+control
+
+[nodes]
+node1
+node2
